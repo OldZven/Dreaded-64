@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\rangedEnemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\Headers\\rangedEnemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\Headers\\enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\raycaster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\raycaster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\levels.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\levels.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\Headers\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\meleeEnemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\Headers\\meleeEnemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\arrow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\Headers\\arrow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\raycaster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\Headers\\raycaster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "enemy.h",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\enemy.h",
+              "RelativeDocumentMoniker": "src\\Headers\\enemy.h",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\enemy.h",
+              "RelativeToolTip": "src\\Headers\\enemy.h",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-01T09:08:59.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "rangedEnemy.h",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\rangedEnemy.h",
+              "RelativeDocumentMoniker": "src\\Headers\\rangedEnemy.h",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\rangedEnemy.h",
+              "RelativeToolTip": "src\\Headers\\rangedEnemy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-01T09:08:59.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "player.h",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\player.h",
+              "RelativeDocumentMoniker": "src\\Headers\\player.h",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\player.h",
+              "RelativeToolTip": "src\\Headers\\player.h",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAGgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-01T09:08:59.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\main.cpp",
+              "RelativeDocumentMoniker": "src\\main.cpp",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\main.cpp",
+              "RelativeToolTip": "src\\main.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-01T09:08:58.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "raycaster.cpp",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\raycaster.cpp",
+              "RelativeDocumentMoniker": "src\\raycaster.cpp",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\raycaster.cpp",
+              "RelativeToolTip": "src\\raycaster.cpp",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwC0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-01T09:08:59.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "levels.cpp",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\levels.cpp",
+              "RelativeDocumentMoniker": "src\\levels.cpp",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\levels.cpp",
+              "RelativeToolTip": "src\\levels.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-01T09:08:59.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "arrow.h",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\arrow.h",
+              "RelativeDocumentMoniker": "src\\Headers\\arrow.h",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\arrow.h",
+              "RelativeToolTip": "src\\Headers\\arrow.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-01T09:08:59.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\enemy.cpp",
+              "RelativeDocumentMoniker": "src\\enemy.cpp",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\enemy.cpp",
+              "RelativeToolTip": "src\\enemy.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-01T09:08:59.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "raycaster.h",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\raycaster.h",
+              "RelativeDocumentMoniker": "src\\Headers\\raycaster.h",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\raycaster.h",
+              "RelativeToolTip": "src\\Headers\\raycaster.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-01T09:08:59.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "meleeEnemy.h",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\meleeEnemy.h",
+              "RelativeDocumentMoniker": "src\\Headers\\meleeEnemy.h",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\meleeEnemy.h",
+              "RelativeToolTip": "src\\Headers\\meleeEnemy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-01T09:08:59.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "player.cpp",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\player.cpp",
+              "RelativeDocumentMoniker": "src\\player.cpp",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\player.cpp",
+              "RelativeToolTip": "src\\player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-01T09:08:59.31Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+﻿  enemy.cpp
+  levels.cpp
+  main.cpp
+C:\Users\Zven\Dreaded\Dreaded-64\src\Headers\player.h(15,31): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+  player.cpp
+C:\Users\Zven\Dreaded\Dreaded-64\src\Headers\player.h(15,31): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'src/player.cpp')
+  
+  raycaster.cpp
+C:\Users\Zven\Dreaded\Dreaded-64\src\Headers\player.h(15,31): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'src/raycaster.cpp')
+  
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(191,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(191,62): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(191,62): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(191,62): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(191,62): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(191,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(191,59): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(191,59): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(191,59): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(191,59): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(192,66): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(192,66): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(192,66): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(192,66): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(192,66): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(192,61): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(192,61): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(192,61): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(192,61): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(192,61): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(193,66): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(193,66): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(193,66): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(193,66): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(193,66): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(193,61): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(193,61): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(193,61): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(193,61): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(193,61): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(194,62): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(194,62): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(194,62): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(194,62): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(194,62): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(194,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(194,59): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(194,59): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(194,59): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(194,59): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(196,60): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(196,60): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(196,60): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(196,60): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(196,60): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(197,65): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(197,65): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(197,65): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(197,65): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(197,65): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(198,70): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(198,70): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(198,70): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(198,70): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(198,70): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(198,65): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(198,65): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(198,65): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(198,65): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(198,65): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(199,66): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(199,66): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(199,66): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(199,66): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(199,66): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(199,60): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(199,60): warning C4244:         with
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(199,60): warning C4244:         [
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(199,60): warning C4244:             T=float
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(199,60): warning C4244:         ]
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(283,54): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(284,55): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(296,67): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(296,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Zven\Dreaded\Dreaded-64\src\raycaster.cpp(301,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  resources.cpp
+  Generating Code...
+  Dreaded-64.vcxproj -> C:\Users\Zven\Dreaded\Dreaded-64\x64\Debug\Dreaded-64.exe
