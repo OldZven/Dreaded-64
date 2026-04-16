@@ -23,44 +23,72 @@ void levelDecision(int lvlIndex, bool startGame) {
     levels level;
     level.Levels();
     int choice = 0;
+    int levelChoice = 0;
     //Choose level to play
     
-    while (levelIndex == 0 && startGame == true) {
-        
-        std::cout << "Choose Level from 1 to 5: ";
-        std::cin >> choice;
-        if (choice == 1) {
+    while (levelIndex == 0 || startGame == false) {
+        if (startGame == false) {
+            levelChoice = lvlIndex;
+        }
+        else {
+            std::cout << "Choose Level from 1 to 5: ";
+            std::cin >> choice;
+            levelChoice = choice;
+        }
+        if (levelChoice == 1) {
             levelIndex = 1;
             for (int i = 0; i < 256; i++) {
                 map[i] = level.loadLevelOne(i);
-                enemySpawnX = { 300.0f, 600.0f ,100.0f ,100.0f ,200.0f ,200.0f ,800.0f ,200.0f, 600.0f, 600.0f, 1500.0f, 1300.0f, 1300.0f, 1400.0f, 1100.0f, 1100.0f, 1500.0f, 1100.0f, 500.0f, 700.0f};
-                enemySpawnY = { 100.0f, 100.0f, 300.0f, 400.0f, 300.0f, 400.0f, 400.0f, 800.0f, 700.0f, 900.0f, 300.0f, 500.0f, 800.0f, 1000.0f, 100.0f, 1500.0f, 1500.0f, 1300.0f, 1500.0f, 1300.0f};
-                enemyMelee = {true, false, false, false, true, true, true, false, true, true, false, true, false, true, true, true, true, false, false, true};
-            }
+                }
+            enemySpawnX = { 300.0f, 600.0f ,100.0f ,100.0f ,200.0f ,200.0f ,800.0f ,200.0f, 600.0f, 600.0f, 1500.0f, 1300.0f, 1300.0f, 1400.0f, 1100.0f, 1100.0f, 1500.0f, 1100.0f, 500.0f, 700.0f };
+            enemySpawnY = { 100.0f, 100.0f, 300.0f, 400.0f, 300.0f, 400.0f, 400.0f, 800.0f, 700.0f, 900.0f, 300.0f, 500.0f, 800.0f, 1000.0f, 100.0f, 1500.0f, 1500.0f, 1300.0f, 1500.0f, 1300.0f };
+            enemyMelee = { true, false, false, false, true, true, true, false, true, true, false, true, false, true, true, true, true, false, false, true };
+
+            break;
         }
-        else if (choice == 2) {
+        else if (levelChoice == 2) {
             levelIndex = 2;
             for (int i = 1; i < 256; i++) {
                 map[i] = level.loadLevelTwo(i);
-            }
+                }
+            enemySpawnX = { 128.0f, 192.0f, 256.0f, 384.0f, 448.0f,512.0f, 640.0f, 768.0f, 832.0f, 896.0f,1024.0f, 1088.0f, 1152.0f, 1216.0f, 1280.0f,1344.0f, 768.0f, 512.0f, 320.0f, 960.0f };
+            enemySpawnY = { 128.0f, 128.0f, 192.0f, 256.0f, 320.0f,    384.0f, 448.0f, 512.0f, 576.0f, 640.0f,    704.0f, 768.0f, 832.0f, 896.0f, 960.0f,   1024.0f, 384.0f, 640.0f, 768.0f, 320.0f };
+            enemyMelee = { true, false, true, true, false,    true, true, false, true, false,    true, false, true, true, false,    true, false, true, true, false };
+
+            break;
         }
-        else if (choice == 3) {
+        else if (levelChoice == 3) {
             levelIndex = 3;
             for (int i = 1; i < 256; i++) {
                 map[i] = level.loadLevelThree(i);
-            }
+                }
+            enemySpawnX = { 128.0f, 192.0f, 256.0f, 320.0f, 448.0f,    512.0f, 576.0f, 640.0f, 768.0f, 832.0f,    896.0f, 960.0f, 1024.0f, 1088.0f, 1152.0f,   1216.0f, 384.0f, 704.0f, 800.0f, 576.0f };
+            enemySpawnY = { 128.0f, 128.0f, 192.0f, 256.0f, 320.0f,    384.0f, 448.0f, 512.0f, 576.0f, 640.0f,    704.0f, 768.0f, 832.0f, 896.0f, 960.0f,    1024.0f, 320.0f, 640.0f, 768.0f, 896.0f };
+            enemyMelee = { true, true, false, true, true,    true, false, true, true, false,    true, true, false, true, true,    true, false, true, true, false };
+
+            break;
         }
-        else if (choice == 4) {
+        else if (levelChoice == 4) {
             levelIndex = 4;
             for (int i = 1; i < 256; i++) {
                 map[i] = level.loadLevelFour(i);
-            }
+                }
+            enemySpawnX = { 128.0f, 192.0f, 256.0f, 384.0f, 448.0f,    512.0f, 640.0f, 704.0f, 768.0f, 832.0f,    896.0f, 960.0f, 1024.0f, 1152.0f, 1216.0f,    384.0f, 576.0f, 640.0f, 800.0f, 1088.0f };
+            enemySpawnY = { 128.0f, 128.0f, 192.0f, 256.0f, 320.0f,    384.0f, 448.0f, 512.0f, 576.0f, 640.0f,    704.0f, 768.0f, 832.0f, 896.0f, 960.0f,    320.0f, 640.0f, 768.0f, 896.0f, 1024.0f };
+            enemyMelee = { true, true, false, true, true,    true, false, true, true, false,    true, true, false, true, true,    false, true, false, true, true };
+
+            break;
         }
-        else if (choice == 5) {
+        else if (levelChoice == 5) {
             levelIndex = 5;
             for (int i = 1; i < 256; i++) {
                 map[i] = level.loadLevelFive(i);
-            }
+                }
+            enemySpawnX = { 128.0f, 192.0f, 256.0f, 320.0f, 448.0f,    512.0f, 640.0f, 704.0f, 768.0f, 832.0f,    896.0f, 960.0f, 1024.0f, 1152.0f, 1216.0f,    384.0f, 576.0f, 640.0f, 800.0f, 960.0f };
+            enemySpawnY = { 128.0f, 128.0f, 192.0f, 256.0f, 320.0f,    384.0f, 448.0f, 512.0f, 576.0f, 640.0f,    704.0f, 768.0f, 832.0f, 896.0f, 960.0f,    320.0f, 640.0f, 768.0f, 896.0f, 1024.0f };
+            enemyMelee = { true, true, true, false, true,    true, false, true, true, true,    false, true, true, false, true,    true, false, true, true, false };
+
+            break;
         }
         std::system("cls");
     }
@@ -135,7 +163,6 @@ int main() {
 
             if (isLoaded == false) {
                 levelDecision(0, true);
-                Player player(100.0f, 100.0f, 0.0f, tileSize, level.mapWidth, level.mapLength, internalWidth, internalHeight, &resource);
                 isLoaded = true;
             }
 
@@ -235,9 +262,23 @@ int main() {
 
                 if (levelIndex > 5)
                     levelIndex = 1; // loop back
+
+                enemies.clear();
+                enemyDeaths.clear();
                 levelDecision(levelIndex, false);
                 player.setX(100.0f);
                 player.setY(100.0f);
+                player.setHealth(100.0f);
+                player.setArrowCount(player.getArrowCount() + 20);
+                for (int i = 0; i < enemiesSpawned;i++) {
+                    if (enemyMelee[i] == true) {
+                        enemies.push_back(std::make_unique<MeleeEnemy>(enemySpawnX[i], enemySpawnY[i], tileSize, level.mapWidth, level.mapLength, &resource));
+                    }
+                    else {
+                        enemies.push_back(std::make_unique<RangedEnemy>(enemySpawnX[i], enemySpawnY[i], tileSize, level.mapWidth, level.mapLength, &resource));
+                    }
+                }
+                
             }
         }
     }

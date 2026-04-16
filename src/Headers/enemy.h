@@ -194,7 +194,7 @@ public:
 
             if (dist <= 15.0f)   // hit radius
             {
-                takeDamage(20.0f);
+                takeDamage(30.0f);
                 a.alive = false;
                 state = ENEMY_HIT;
             }

@@ -57,6 +57,8 @@ public:
     void setX(float nx) { x = nx; }
     void setY(float ny) { y = ny; }
     void setChangeLevel(bool flag) { changingLevel = flag; }
+    void setHealth(float newHealth) { health = newHealth; }
+    void setArrowCount(int newArrowCount) { arrowCount = newArrowCount; }
 
     void setHasDealtMeleeDamage(bool flag) { hasDealtMeleeDamage = flag; }
 

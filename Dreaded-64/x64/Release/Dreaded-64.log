@@ -1,4 +1,130 @@
-﻿  raycaster.cpp
+﻿  enemy.cpp
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\player.h(16,31): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'src/enemy.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\player.h(49,41): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
+  (compiling source file 'src/enemy.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(46,56): warning C4305: '-=': truncation from 'double' to 'float'
+  (compiling source file 'src/enemy.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(47,57): warning C4305: '+=': truncation from 'double' to 'float'
+  (compiling source file 'src/enemy.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(54,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/enemy.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(80,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/enemy.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemy.h(96,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/enemy.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemy.h(96,23): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/enemy.cpp')
+  
+  main.cpp
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(46,56): warning C4305: '-=': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(47,57): warning C4305: '+=': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(54,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(80,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemy.h(96,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemy.h(96,23): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\player.h(16,31): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\player.h(49,41): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\meleeEnemy.h(9,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\meleeEnemy.h(9,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\meleeEnemy.h(109,56): warning C4305: '-=': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\meleeEnemy.h(110,57): warning C4305: '+=': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\meleeEnemy.h(117,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\meleeEnemy.h(182,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(18,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(18,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(137,54): warning C4305: '-=': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(138,55): warning C4305: '+=': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(143,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(196,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(213,40): warning C4305: '-=': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(214,41): warning C4305: '+=': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(218,23): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(232,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\rangedEnemy.h(233,46): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+  player.cpp
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(46,56): warning C4305: '-=': truncation from 'double' to 'float'
+  (compiling source file 'src/player.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(47,57): warning C4305: '+=': truncation from 'double' to 'float'
+  (compiling source file 'src/player.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(54,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/player.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(80,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/player.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemy.h(96,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/player.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemy.h(96,23): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/player.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\player.h(16,31): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'src/player.cpp')
+  
+C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\player.h(49,41): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
+  (compiling source file 'src/player.cpp')
+  
+  raycaster.cpp
 C:\Users\zvens\Development\Dreaded\Dreaded-64\src\Headers\enemyDeathIcon.h(46,56): warning C4305: '-=': truncation from 'double' to 'float'
   (compiling source file 'src/raycaster.cpp')
   
@@ -169,8 +295,8 @@ C:\Users\zvens\Development\Dreaded\Dreaded-64\src\raycaster.cpp(460,67): warning
 C:\Users\zvens\Development\Dreaded\Dreaded-64\src\raycaster.cpp(460,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\zvens\Development\Dreaded\Dreaded-64\src\raycaster.cpp(465,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   Generating code
-  2 of 905 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+  3 of 909 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    3 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Dreaded-64.vcxproj -> C:\Users\zvens\Development\Dreaded\Dreaded-64\x64\Release\Dreaded-64.exe

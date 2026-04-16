@@ -19,7 +19,7 @@ void Enemy::processPlayerMelee(
 
     if ((light || heavy) && !player.getHasDealtMeleeDamage())
     {
-        float damage = (player.getMeleeType() == 1) ? 25.f : 60.f;
+        float damage = (player.getMeleeType() == 1) ? 40.0f : 80.0f;
 
         for (auto& e : enemies)
         {
