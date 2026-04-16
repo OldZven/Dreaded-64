@@ -19,13 +19,13 @@ std::vector<float> enemySpawnY;
 std::vector<bool> enemyMelee;
 
 
-void levelDecision() {
+void levelDecision(int lvlIndex, bool startGame) {
     levels level;
     level.Levels();
     int choice = 0;
     //Choose level to play
     
-    while (levelIndex == 0) {
+    while (levelIndex == 0 && startGame == true) {
         
         std::cout << "Choose Level from 1 to 5: ";
         std::cin >> choice;
@@ -75,7 +75,7 @@ int main() {
   
     //int map[32 * 32];
     
-    levelDecision();
+    levelDecision(0,true);
 
     // --- Internal render resolution ---
     const int internalWidth = 320;
@@ -84,6 +84,8 @@ int main() {
     // --- Fullscreen window setup ---
     sf::VideoMode desktop = sf::VideoMode::getDesktopMode();
     sf::RenderWindow window(desktop, "Dreaded 64", sf::Style::Fullscreen);
+    window.setFramerateLimit(30);
+    window.setVerticalSyncEnabled(true);
 
     // --- RenderTexture for low-res rendering ---
     sf::RenderTexture renderTexture;
@@ -132,7 +134,7 @@ int main() {
         while (window.isOpen()) {
 
             if (isLoaded == false) {
-                levelDecision();
+                levelDecision(0, true);
                 Player player(100.0f, 100.0f, 0.0f, tileSize, level.mapWidth, level.mapLength, internalWidth, internalHeight, &resource);
                 isLoaded = true;
             }
@@ -226,9 +228,16 @@ int main() {
             }
             //Change Level
             changedLevel = player.changeLevel();
-            if (changedLevel == true) {
-                levelIndex = 0;
-                isLoaded = false;
+            if (changedLevel)
+            {
+                levelIndex++;
+                player.setChangeLevel(false);
+
+                if (levelIndex > 5)
+                    levelIndex = 1; // loop back
+                levelDecision(levelIndex, false);
+                player.setX(100.0f);
+                player.setY(100.0f);
             }
         }
     }

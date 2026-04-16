@@ -26,7 +26,8 @@ bool Player::canMoveTo(float nx, float ny, const int* map) {
     int tileY = int(ny / tileSize);
     if (tileX < 0 || tileX >= mapWidth || tileY < 0 || tileY >= mapLength)
         return false;
-    return map[tileY * mapWidth + tileX] == 0;
+    int tile = map[tileY * mapWidth + tileX];
+    return tile == 0 || tile == 2;
 }
 bool Player::collidesWithEnemy(float oldX, float oldY,
     float newX, float newY,
@@ -321,11 +322,11 @@ void Player::handleCrossbow(float dt) {
             //---Arrow Processing---
             if (arrows.size() < 1000 && arrowCount > 0) {
                 Arrow a;
+                a.alive = true;
                 a.x = x;
                 a.y = y;
                 a.angle = angle;
-                a.speed = 160.0f;
-                a.alive = true;
+                a.speed = 80.0f;
                 arrows.push_back(a);
                 arrowCount--;
                 if (arrowCount < 0) {
@@ -439,9 +440,20 @@ void Player::handleMenu() {
     
 }
 
+void Player::detectDoor(const int* map) {
+    int tileX = int(x / tileSize);
+    int tileY = int(y / tileSize);
+
+    if (map[tileY * mapWidth + tileX] == 2)
+    {
+        changingLevel = true;
+    }
+}
+
 void Player::update(float dt, const int* map) {
     handleIdleTimer(dt);
     playerStatus();
+    detectDoor(map);
 
     checkPlayerTexture(dt);
 

@@ -27,6 +27,7 @@ private:
     void renderFloor(float playerX, float playerY, float playerAngle, int tileSize, int levelIndex);
     void renderCeiling(float playerX, float playerY, float playerAngle, int tileSize, int levelIndex);
     void renderWalls(float playerX, float playerY, float playerAngle, int tileSize, int* map, int mapWidth, int mapLength, int levelIndex);
+    void renderDoors(float playerX, float playerY, float playerAngle, int tileSize, int* map, int mapWidth, int mapLength, int levelIndex);
 
     //- Hud renders
     void renderRightArm(int frame);

@@ -56,6 +56,7 @@ public:
     // Position Setters
     void setX(float nx) { x = nx; }
     void setY(float ny) { y = ny; }
+    void setChangeLevel(bool flag) { changingLevel = flag; }
 
     void setHasDealtMeleeDamage(bool flag) { hasDealtMeleeDamage = flag; }
 
@@ -66,6 +67,7 @@ public:
     // Player variable getters
     float getHealth() const { return health; }
     int getArrowCount() const { return arrowCount; }
+    bool getCurrentlyBlocking() const { return currentlyBlocking;  }
 
     void playerHit(float damage);
     void playerHeal(float heal);
@@ -167,6 +169,7 @@ private:
 
     
     void playerStatus();
+    void detectDoor(const int* map);
 
     void walking(float dt);
     void running(float dt);

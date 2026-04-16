@@ -38,8 +38,10 @@ raycaster::raycaster(sf::RenderTarget* tgt, resources* tex, int width, int heigh
 void raycaster::renderEnvironment(float playerX, float playerY, float playerAngle, int tileSize, int* map, int mapWidth, int mapLength, int levelIndex) {
     levelIndex--;
     renderFloor(playerX, playerY, playerAngle,tileSize,levelIndex);
-    renderCeiling(playerX, playerY, playerAngle, tileSize,levelIndex);
+    renderCeiling(playerX, playerY, playerAngle, tileSize, levelIndex);
     renderWalls(playerX, playerY, playerAngle, tileSize, map, mapWidth, mapLength,levelIndex);
+    renderDoors(playerX, playerY, playerAngle, tileSize, map, mapWidth, mapLength, levelIndex);
+    
 }
 void raycaster::renderHUD(float health, int arrowCount, int playerFrameIndex, int rightArmFrameIndex, int leftArmFrameIndex) {
     renderRightArm(rightArmFrameIndex);
@@ -224,6 +226,155 @@ void raycaster::renderWalls(float playerX, float playerY, float playerAngle, int
     target->draw(wallVertices, wallState);
 }
 
+void raycaster::renderDoors(
+    float playerX, float playerY, float playerAngle,
+    int tileSize, int* map,
+    int mapWidth, int mapLength,
+    int levelIndex)
+{
+    sf::VertexArray doorVertices(sf::Quads);
+
+    sf::Texture& doorTexture = textures->doorTexture[levelIndex];
+    int textureWidth = doorTexture.getSize().x;
+    int textureHeight = doorTexture.getSize().y;
+
+    for (int x = 0; x < screenWidth; x++)
+    {
+        // Ray angle for this screen column
+        float cameraX = 2.0f * x / float(screenWidth) - 1.0f;
+        float rayAngle = playerAngle + std::atan(cameraX * std::tan(FOV * 0.5f));
+
+        float rayDirX = std::cos(rayAngle);
+        float rayDirY = std::sin(rayAngle);
+
+        // Player in tile units
+        float posX = playerX / tileSize;
+        float posY = playerY / tileSize;
+
+        int mapX = int(posX);
+        int mapY = int(posY);
+
+        float deltaDistX = (rayDirX == 0) ? 1e30f : std::abs(1.f / rayDirX);
+        float deltaDistY = (rayDirY == 0) ? 1e30f : std::abs(1.f / rayDirY);
+
+        int stepX, stepY;
+        float sideDistX, sideDistY;
+
+        if (rayDirX < 0)
+        {
+            stepX = -1;
+            sideDistX = (posX - mapX) * deltaDistX;
+        }
+        else
+        {
+            stepX = 1;
+            sideDistX = (mapX + 1.f - posX) * deltaDistX;
+        }
+
+        if (rayDirY < 0)
+        {
+            stepY = -1;
+            sideDistY = (posY - mapY) * deltaDistY;
+        }
+        else
+        {
+            stepY = 1;
+            sideDistY = (mapY + 1.f - posY) * deltaDistY;
+        }
+
+        bool hit = false;
+        bool foundDoor = false;
+        int side = 0;
+
+        while (!hit)
+        {
+            if (sideDistX < sideDistY)
+            {
+                sideDistX += deltaDistX;
+                mapX += stepX;
+                side = 0;
+            }
+            else
+            {
+                sideDistY += deltaDistY;
+                mapY += stepY;
+                side = 1;
+            }
+
+            if (mapX < 0 || mapX >= mapWidth ||
+                mapY < 0 || mapY >= mapLength)
+            {
+                hit = true;
+                break;
+            }
+
+            int tile = map[mapY * mapWidth + mapX];
+
+            if (tile == 1) // wall blocks view
+            {
+                hit = true;
+            }
+            else if (tile == 2) // door found
+            {
+                hit = true;
+                foundDoor = true;
+            }
+        }
+
+        if (!foundDoor)
+            continue;
+
+        float perpDist =
+            (side == 0)
+            ? (sideDistX - deltaDistX)
+            : (sideDistY - deltaDistY);
+
+        perpDist *= tileSize;
+        perpDist = std::max(perpDist, 0.1f);
+
+        // If wall already closer, skip door
+        if (perpDist > depthBuffer[x])
+            continue;
+
+        int lineHeight = int((tileSize * screenHeight) / perpDist);
+        lineHeight = std::min(lineHeight, screenHeight);
+
+        int drawStart = std::max(0, -lineHeight / 2 + screenHeight / 2);
+        int drawEnd = std::min(screenHeight - 1, lineHeight / 2 + screenHeight / 2);
+
+        float wallX;
+        if (side == 0)
+            wallX = posY + (perpDist / tileSize) * rayDirY;
+        else
+            wallX = posX + (perpDist / tileSize) * rayDirX;
+
+        wallX -= std::floor(wallX);
+
+        int texX = int(wallX * textureWidth);
+
+        if ((side == 0 && rayDirX > 0) ||
+            (side == 1 && rayDirY < 0))
+        {
+            texX = textureWidth - texX - 1;
+        }
+
+        texX = std::clamp(texX, 0, textureWidth - 1);
+
+        sf::Color shade =
+            (side == 1)
+            ? sf::Color(180, 180, 180)
+            : sf::Color::White;
+
+        doorVertices.append(sf::Vertex(sf::Vector2f(x, drawStart), shade, sf::Vector2f(texX, 0)));
+        doorVertices.append(sf::Vertex(sf::Vector2f(x + 1, drawStart), shade, sf::Vector2f(texX + 1, 0)));
+        doorVertices.append(sf::Vertex(sf::Vector2f(x + 1, drawEnd), shade, sf::Vector2f(texX + 1, textureHeight)));
+        doorVertices.append(sf::Vertex(sf::Vector2f(x, drawEnd), shade, sf::Vector2f(texX, textureHeight)));
+    }
+
+    sf::RenderStates states;
+    states.texture = &doorTexture;
+    target->draw(doorVertices, states);
+}
 
 
 // --- Arms Rendering ---

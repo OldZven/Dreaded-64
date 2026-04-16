@@ -63,20 +63,48 @@ public:
 
         // --- update projectiles ---
         for (auto& p : projectiles) {
-            if (!p.alive) continue;
-
             p.x += std::cos(p.angle) * p.speed * dt;
             p.y += std::sin(p.angle) * p.speed * dt;
+
+            int tileX = int(p.x / tileSize);
+            int tileY = int(p.y / tileSize);
+
+            // map bounds
+            if (tileX < 0 || tileX >= mapWidth ||
+                tileY < 0 || tileY >= mapLength)
+            {
+                p.alive = false;
+                continue;
+            }
+            if (map[tileY * mapWidth + tileX] == 1)
+            {
+                p.alive = false;
+                continue;
+            }
 
             // --- PLAYER COLLISION ---
             float dx = p.x - player.getX();
             float dy = p.y - player.getY();
             float dist = std::sqrt(dx * dx + dy * dy);
 
+            bool seesPlayer = hasLineOfSight(x, y, player.getX(), player.getY(), map, tileSize, mapWidth, mapLength);
+
+            bool chase = canChase(seesPlayer, dt);
+
+            if (!chase)
+            {
+                state = ENEMY_IDLE;
+                updateAnimation(dt);
+                return;
+            }
+
             if (dist < 20.0f) {
-                player.playerHit(15.0f);   // damage
+                if (player.getCurrentlyBlocking() == false) {
+                    player.playerHit(15.0f);
+                }
                 p.alive = false;
             }
+            
         }
 
         // remove dead projectiles

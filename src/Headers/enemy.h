@@ -16,6 +16,8 @@ protected:
     bool alive;
     float radius = 0.5f;    // enemy hitbox size
     float hitTimer = 0.0f;
+    float seeTimer = 0.0f;
+    float seeDuration = 2.0f;
 
 
     resources* res;
@@ -48,6 +50,47 @@ public:
 
     // Map info
     int tileSize, mapWidth, mapLength;
+
+    bool canChase(bool seesPlayer, float dt)
+    {
+        if (seesPlayer)
+        {
+            seeTimer = seeDuration;
+            return true;
+        }
+
+        seeTimer -= dt;
+        if (seeTimer < 0.0f)
+            seeTimer = 0.0f;
+
+        return seeTimer > 0.0f;
+    }
+
+    bool hasLineOfSight(float ex, float ey, float px, float py, const int* map, int tileSize, int mapW, int mapH)
+    {
+        float dx = px - ex;
+        float dy = py - ey;
+
+        float steps = std::max(std::abs(dx), std::abs(dy)) / (tileSize * 0.5f);
+
+        for (int i = 0; i < (int)steps; i++)
+        {
+            float t = (float)i / steps;
+            float x = ex + dx * t;
+            float y = ey + dy * t;
+
+            int tileX = (int)(x / tileSize);
+            int tileY = (int)(y / tileSize);
+
+            if (tileX < 0 || tileX >= mapW || tileY < 0 || tileY >= mapH)
+                return false;
+
+            if (map[tileY * mapW + tileX] == 1)
+                return false; // wall blocks vision
+        }
+
+        return true;
+    }
 
     Enemy(int startX, int startY, int tSize, int mWidth, int mLength, resources* r)
         : x(startX), y(startY), health(100.f), tileSize(tSize), mapWidth(mWidth), mapLength(mLength), speed(30.f), angle(0.f), alive(true), res(r)
@@ -147,9 +190,11 @@ public:
             float dy = a.y - y;
             float dist = std::sqrt(dx * dx + dy * dy);
 
-            if (dist < 30.0f)   // hit radius
+
+
+            if (dist <= 15.0f)   // hit radius
             {
-                takeDamage(40.0f);
+                takeDamage(20.0f);
                 a.alive = false;
                 state = ENEMY_HIT;
             }

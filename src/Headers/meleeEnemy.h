@@ -13,6 +13,7 @@ public:
         swingDisplayTime = 1.5f;    // how long the attack sprite is shown (seconds) — per your request
         attackTimer = 0.0f;
         swingTimer = 0.0f;
+        seeTimer = 0.0f;
         swingPlayed = false;
         speed = 30.0f;
         hitRange = 32.0f;
@@ -34,7 +35,19 @@ public:
         float dy = player.getY() - y;
         float distance = std::sqrt(dx * dx + dy * dy);
 
+        bool seesPlayer = hasLineOfSight(x, y, player.getX(), player.getY(), map, tileSize, mapWidth, mapLength);
+        
+        bool chase = canChase(seesPlayer, dt);
+
+        if (!chase)
+        {
+            state = ENEMY_IDLE;
+            updateAnimation(dt);
+            return;
+        }
+
         // decrement timers
+        if (seeTimer >= 0.0f) seeTimer -= dt;
         if (attackTimer > 0.0f) attackTimer -= dt;
         if (swingTimer > 0.0f) swingTimer -= dt;
         // when swingTimer runs out, we show idle for remainder of attackTimer
@@ -60,7 +73,10 @@ public:
             playMeleeSound();
             swingPlayed = true;
 
-            player.playerHit(30.0f);
+            if (player.getCurrentlyBlocking() == false) {
+                player.playerHit(30.0f);
+            }
+            
 
             // Optionally, you can also apply damage here (once per swing)
             // applyDamageToPlayer(); // <-- hook this up to your player-damage code if needed
