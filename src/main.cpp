@@ -31,9 +31,54 @@ void levelDecision(int lvlIndex, bool startGame) {
             levelChoice = lvlIndex;
         }
         else {
-            std::cout << "Choose Level from 1 to 5: ";
-            std::cin >> choice;
-            levelChoice = choice;
+            sf::RenderWindow windowMenu (sf::VideoMode(400,200), "Dreaded Menu");
+            sf::Font font;
+            font.loadFromFile("Data/Textures/Fonts/ARIAL.ttf"); // use your font
+            sf::Text text;
+            text.setFont(font);
+            text.setCharacterSize(24);
+            text.setFillColor(sf::Color::White);
+            text.setPosition(50, 50);
+            std::string input = "";
+            bool enterPressed = false;
+            while (windowMenu.isOpen())
+            {
+                sf::Event event;
+
+                while (windowMenu.pollEvent(event))
+                {
+                    if (event.type == sf::Event::Closed)
+                        windowMenu.close();
+
+                    if (event.type == sf::Event::TextEntered)
+                    {
+                        char c = static_cast<char>(event.text.unicode);
+
+                        if (c >= '1' && c <= '5')   // printable characters
+                            input = c;
+
+                        if (c == '\b' && !input.empty()) // backspace
+                            input.pop_back();
+                    }
+                    if (event.type == sf::Event::KeyPressed &&
+                        event.key.code == sf::Keyboard::Enter)
+                    {
+                        enterPressed = true; // or break out of your loop
+                    }
+                }
+
+                text.setString("Choose level [1,2,3,4,5]: \n" + input);
+
+                windowMenu.clear();
+                windowMenu.draw(text);
+                windowMenu.display();
+                if (!input.empty() && enterPressed == true) {
+                    levelChoice = std::stoi(input);
+                    windowMenu.close();
+                }
+            }
+            
+
         }
         if (levelChoice == 1) {
             levelIndex = 1;
@@ -90,7 +135,6 @@ void levelDecision(int lvlIndex, bool startGame) {
 
             break;
         }
-        std::system("cls");
     }
 }
 

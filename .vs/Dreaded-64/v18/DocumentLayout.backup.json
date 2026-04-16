@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\Headers\\player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\resources.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B49920DA-87F9-4FB9-8F93-6520C4A96DEC}|Dreaded-64.vcxproj|solutionrelative:src\\Headers\\resources.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "player.h",
-              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\player.h",
-              "RelativeDocumentMoniker": "src\\Headers\\player.h",
-              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\player.h",
-              "RelativeToolTip": "src\\Headers\\player.h",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADwAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-16T09:58:17.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "player.cpp",
-              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\player.cpp",
-              "RelativeDocumentMoniker": "src\\player.cpp",
-              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\player.cpp",
-              "RelativeToolTip": "src\\player.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-16T09:58:10.383Z",
+              "Title": "resources.h",
+              "DocumentMoniker": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\resources.h",
+              "RelativeDocumentMoniker": "src\\Headers\\resources.h",
+              "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\Headers\\resources.h",
+              "RelativeToolTip": "src\\Headers\\resources.h",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAGcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-16T10:30:19.717Z",
               "EditorCaption": ""
             },
             {
@@ -58,7 +41,7 @@
               "RelativeDocumentMoniker": "src\\main.cpp",
               "ToolTip": "C:\\Users\\zvens\\Development\\Dreaded\\Dreaded-64\\src\\main.cpp",
               "RelativeToolTip": "src\\main.cpp",
-              "ViewState": "AgIAAAcBAAAAAAAAAAAuwA4BAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAIAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-01T09:08:58.96Z",
               "EditorCaption": ""
